@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import {ButtonGroup,DropdownButton,MenuItem,Button,Label} from 'react-bootstrap'
 import ChildInput from './ChildInput'
+import ChildB from "./ChildB";
 
 class DropMenu extends Component{
 
@@ -49,7 +50,11 @@ class DropMenu extends Component{
                 <Button bsStyle="info">中间</Button>
                 <Button bsStyle="info">右侧</Button>
             </ButtonGroup>
-            <ChildInput handleCallBack={this.handleCallBack}/>
+                <ChildInput handleCallBack={this.handleCallBack}/>
+            <div>
+                <ChildB value={this.state.value}/>
+            </div>
+
         </div>;
     }
 }
