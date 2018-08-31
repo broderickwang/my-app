@@ -15,6 +15,10 @@ class DropMenu extends Component{
         }
     }
 
+    /**
+     * 这是组件挂载到DOM之后的生命周期钩子
+     * 这时候组件的各方面都准备就绪
+     */
     componentDidMount(){
         //如果使用函数，setState不是批量更新，tk的打印是3
         // this.setState((prevState,prevProps)=>({star: prevState.star+1}));
