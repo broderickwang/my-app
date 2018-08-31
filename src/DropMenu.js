@@ -3,6 +3,9 @@ import {ButtonGroup,DropdownButton,MenuItem,Button,Label} from 'react-bootstrap'
 import ChildInput from './ChildInput'
 import ChildB from "./ChildB";
 
+/**
+ * React每次更新state都会返回一个新对象，而不是修改原对象。
+ */
 class DropMenu extends Component{
 
     constructor(props){
