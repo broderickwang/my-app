@@ -1,4 +1,5 @@
 import React,{Component} from 'react';
+import MyPure from './MyPure';
 
 class ChildB extends Component{
     constructor(props){
@@ -6,7 +7,7 @@ class ChildB extends Component{
     }
 
     render(){
-        return <div><h1>{this.props.value}</h1></div>
+        return <div><h1><MyPure name={this.props.value}></MyPure></h1></div>
     }
 }
 
